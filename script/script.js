@@ -2,7 +2,7 @@ function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
-
+// heart Button header
 let heartNumber = 0;
 const hearCount = getElement("heart-count");
 const hearBtns = document.getElementsByClassName("heartBtn");
@@ -11,6 +11,17 @@ for (let heart of hearBtns) {
   heart.onclick = function () {
     heartNumber++;
     hearCount.innerText = heartNumber;
+  };
+}
+// copy Button header
+let copyNumber = 0;
+const copyCount = getElement("copy-count");
+const copyBtns = document.getElementsByClassName("copyBtn");
+
+for (let copy of copyBtns) {
+  copy.onclick = function () {
+    copyNumber++;
+    copyCount.innerText = copyNumber;
   };
 }
 
@@ -282,3 +293,7 @@ document.getElementById("railwayBtn").addEventListener("click", function () {
 
   CallHistory.appendChild(newHistory);
 });
+
+document
+  .getElementById("callHistoryBtn")
+  .addEventListener("click", function () {});
