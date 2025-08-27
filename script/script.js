@@ -22,6 +22,12 @@ for (let copy of copyBtns) {
   copy.onclick = function () {
     copyNumber++;
     copyCount.innerText = copyNumber;
+    const numberCopy = copy
+      .closest(".card-container")
+      .querySelector(".hot-line").innerText;
+    alert(numberCopy);
+
+    navigator.clipboard.writeText(numberCopy);
   };
 }
 
