@@ -55,28 +55,31 @@
         </div>
       </nav>
     </header>
+    <!-- Banner Section start here -->
+    <section
+      class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full px-4 py-8"
+    >
+      <div class="flex flex-col justify-center items-center gap-3">
+        <img class="w-20" src="./assets/logo-dark.png" alt="Logo" />
+        <h1 class="text-white text-2xl font-bold">
+          Emergency Service Directory
+        </h1>
+        <p class="text-white text-sm font-semibold">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
     <main class="bg-[#f5fff6]">
-      <!-- Banner Section start here -->
-      <section
-        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full px-4 py-8"
-      >
-        <div class="flex flex-col justify-center items-center gap-3">
-          <img class="w-20" src="./assets/logo-dark.png" alt="Logo" />
-          <h1 class="text-white text-2xl font-bold">
-            Emergency Service Directory
-          </h1>
-          <p class="text-white text-sm font-semibold">
-            Government Emergency Services at Your Fingertip – A Project by
-            Government of the People’s Republic of Bangladesh
-          </p>
-        </div>
-      </section>
       <!-- Card section/ body main section here -->
       <section
         id="service-container"
-        class="bg-[#f5fff6] w-11/12 mx-auto grid grid-cols-12 gap-5 mt-5 p-4"
+        class="bg-[#f5fff6] w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-5 mt-5 p-4"
       >
-        <section id="service-box" class="col-span-9 grid grid-cols-3 gap-5">
+        <section
+          id="service-box"
+          class="col-span-9 grid grid-cols-1 md:grid-cols-3 gap-5"
+        >
           <!-- National Emergency card -->
           <div class="card-container bg-white shadow-sm rounded-xl">
             <div class="p-4">
@@ -431,7 +434,7 @@
           </div>
         </section>
         <!-- Aside section -->
-        <aside class="col-span-3 bg-white rounded-xl p-4">
+        <aside class="col-span-9 md:col-span-3 bg-white rounded-xl p-4">
           <div>
             <div class="flex justify-between items-center mb-4">
               <div class="flex items-center gap-2">
