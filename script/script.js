@@ -302,4 +302,7 @@ document.getElementById("railwayBtn").addEventListener("click", function () {
 
 document
   .getElementById("callHistoryBtn")
-  .addEventListener("click", function () {});
+  .addEventListener("click", function () {
+    const clearHistory = getElement("call-history");
+    clearHistory.innerHTML = "";
+  });
