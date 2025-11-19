@@ -1,35 +1,103 @@
-1. What is the difference between getElementById, getElementByClassName and querySelector/querySelectorAll?
+## 🚨 Emergency Hotline 
+Emergency Hotline is a simple web application built to provide emergency contact information in an intuitive and user-friendly interface. Users can quickly access important numbers in case of emergencies.
 
-Ans:getElementById
--> "getElementById" is a unique element. Only one element can be found using it.
--> It just returns a DOM element.
--> document.getElementById("anyThing");
+## 📸 Screenshots / Demo
+<p align="center">
+  <img src="https://i.postimg.cc/ZRkDHm0f/screencapture-mahmud014-github-io-Emergency-Hotline-Assignment-5-2025-11-19-10-28-25.png" width="100%" />
+</p>
 
-getElementByClassName
--> It can select multiple elements of the same class name.
--> It returns an array-like object.
--> document.getElementByClassName("anyClass");
+## 🧾 Table of Contents
+- About
+- Features
+- Tech Stack
+- Screenshots / Demo
+- Getting Started
+- Installation
+- Usage
+- JavaScript Q&A
+- Contact
 
-querySelector/querySelectorAll
--> "querySelector" selects the first element on the Selector.
--> "querySelectorAll" selects the all elements on the Selector. This also works like an array.
+## 📌 About
+This project is part of a web development assignment that focuses on DOM manipulation, event handling, and dynamic content creation using vanilla JavaScript, HTML, and CSS. Users can see emergency hotline numbers and interact with elements dynamically.
 
-2. How do you create and insert a new element into the DOM?
-   Ans:
-   We will create a new DOM element using document.createElement("div"). We can place various types of elements, HTML, text, and images in this div.
+## ✅ Features
+View emergency hotline numbers for different services
+Responsive design (mobile & desktop)
+Interactive buttons and dynamic UI updates using JavaScript
+Clean and simple user interface
 
-3. What is Event Bubbling and how does it work?
-   Ans:
-   An event bubble is a bubble that flows from a DOM element's child element to its parent element. It works from bottom to top.
+## 💻 Tech Stack
+Frontend: HTML5, CSS3, JavaScript
+DOM Manipulation & Events: Vanilla JS (getElementById, getElementsByClassName, querySelector, querySelectorAll)
 
-4. What is Event Delegation in JavaScript? Why is it useful?
-   Ans:
-   Event delegation is a way to add event listeners in JavaScript. It allows multiple child elements to be assigned event listeners at once, eliminating the need to add event listeners separately. If an event listener is assigned to a parent element, the listener also handles events on the child elements inside that element.
-   This works because of event bubbling: when an event listener on a child element is triggered, the event reaches the parent, where it can "catch" it.
+## Hosting: 
+GitHub Pages
 
-5. What is the difference between preventDefault() and stopPropagation() methods?
-   Ans: preventDefault()-
-   When an event listener is added to a form, the page reloads by default. To prevent this automatic reload, the preventDefault() method is used.
+## 🔗 Live Demo
+https://mahmud014.github.io/Emergency-Hotline-Assignment-5/
 
-   stopPropagation():-
-   When multiple events are added to the DOM, stopPropagation() is used to prevent this event from bubbling up. That is, where stopPropagation() is used. Only that event will be seen. Events above it will no longer work.
+## 🏁 Getting Started
+## 📥 Installation
+
+### 1️⃣ Clone the repository
+git clone https://github.com/mahmud014/Emergency-Hotline-Assignment-5.git
+cd Emergency-Hotline-Assignment-5
+
+### 2️⃣ Open index.html in your browser
+No additional dependencies are required for this project.
+
+## 🧪 Usage
+- Open the index.html file
+- Browse and interact with emergency hotline numbers
+- Click buttons to see dynamic DOM changes
+
+## 🧠 JavaScript Q&A
+
+### 1. Difference between getElementById, getElementsByClassName, querySelector/querySelectorAll
+
+- getElementById
+  - Selects a unique element by ID
+  - Returns a single DOM element
+  - document.getElementById("anyThing");
+
+- getElementsByClassName
+  - Selects multiple elements with the same class
+  - Returns an array-like HTMLCollection
+  - document.getElementsByClassName("anyClass");
+
+- querySelector / querySelectorAll
+  - querySelector selects the first matching element
+  - querySelectorAll selects all matching elements as a NodeList
+
+### 2. How to create and insert a new element into the DOM
+const div = document.createElement("div");
+div.textContent = "Hello World";
+document.body.appendChild(div);
+
+- createElement creates a new DOM element
+- You can add text, HTML, or images to it
+- Insert it into the DOM using appendChild or other DOM methods
+
+### 3. What is Event Bubbling and how does it work?
+
+- Event bubbling is when an event starts at the target element and flows upward to parent elements
+- Works from child → parent → document
+
+### 4. What is Event Delegation in JavaScript? Why is it useful?
+- Assign an event listener to a parent element to handle events on child elements
+- Useful for dynamically added child elements
+- Works because of event bubbling
+
+### 5. Difference between preventDefault() and stopPropagation()
+
+- preventDefault()
+   - Stops default browser behavior (e.g., form submission reload)
+
+- stopPropagation()
+   - Stops the event from bubbling to parent elements
+
+## 👨‍💻 Developer
+- Author: Md. Shukur Mahmud
+- 📧 Email: anik955720@gmail.com
+- 🔗 GitHub: https://github.com/mahmud014
+- 🔗 LinkedIn: https://www.linkedin.com/in/md-shukur-mahmud-387439261/
